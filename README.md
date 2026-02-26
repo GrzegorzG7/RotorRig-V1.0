@@ -100,7 +100,7 @@ Hardware (inserts/screws/magnets): see **BOM**.
 ### 3) Electronics & wiring
 This version uses **perfboard + off-the-shelf modules** (no custom manufactured PCB required).
 - Wiring diagram: `docs/wiring/Wiring.png`
-- If you add a KiCad schematic: put it in `kicad/` (recommended: `kicad/rotorrig-mainboard/`)
+- KiCad project files are in `kicad/` (Mainboard.kicad_pro + Mainboard.kicad_sch)
 
 ### 4) Firmware (PlatformIO)
 Target MCU: **WisdPi Tiny RP2040** (RP2040).  
@@ -128,7 +128,7 @@ pio device monitor
 
 Open Serial @ **115200**.
 
-### 2) (Optional) set metadata (saved into every CSV row)
+### 2) Set metadata (saved into every CSV row)
 ```text
 setmeta <test_id> <motor_id> <kv> <prop> <battery_s> <esc_fw> <pole_pairs>
 ```
@@ -185,7 +185,7 @@ The CSV header includes (among others):
 ---
 
 ## BOM (Bill of Materials)
-Full BOM is in `BOM.csv` (repo root). Below is the same BOM as a table:
+Full BOM is in `BOM.csv`.
 
 | Line | Category | Qty | Unit | Part | Manufacturer | MPN | Link |
 |---:|---|---:|---|---|---|---|---|
