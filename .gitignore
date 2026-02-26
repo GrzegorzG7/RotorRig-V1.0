@@ -1,0 +1,15 @@
+# PlatformIO
+.pio/
+.vscode/
+*.pyc
+__pycache__/
+
+# CAD / exports
+*.f3d~
+*.step~
+*.stp~
+*.bak
+
+# OS junk
+.DS_Store
+Thumbs.db
